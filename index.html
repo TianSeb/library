@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Library</title>
+</head>
+
+<body>
+    <div id="form">
+        <div class="titulo">
+            <h3>Log your Books</h3>
+        </div>
+        <form action="" method="GET">
+            <div class="input-block">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="formData" required>
+        </div>
+            <div class="input-block">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="formData" required>
+        </div>
+            <div class="input-block">
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" name="formData" min="0" max="6000" required>
+        </div>
+            <div class="input-block">
+            <label for="status">Status</label>
+            <select name="status" id="status" class="u-full-width">
+                <option value="Read">Read</option>
+                <option value="Not Read">Not Read</option>
+            </select>
+        </div>
+            <div class="input-block">
+            <button type="submit"> Add Book </button>
+        </div>
+        </form>
+    </div>
+    <main>
+        <div class="header">
+            <h1>Library Model</h1>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>
